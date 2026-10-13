@@ -1,27 +1,27 @@
 # Voice to Text
 
-Записывает разговор и сохраняет расшифровку в **TXT**. Аудио не хранится.
+Records a conversation and saves the transcript as **TXT**. Audio is not kept.
 
-## Запуск (Windows)
+## Run (Windows)
 
-1. Установите [Python 3.11+](https://www.python.org/downloads/) (галка **Add to PATH**)  
-   или в cmd: `winget install Python.Python.3.12`
-2. Запустите `VoiceToText.exe`
+1. Install [Python 3.11+](https://www.python.org/downloads/) (check **Add to PATH**)  
+   or in cmd: `winget install Python.Python.3.12`
+2. Run `VoiceToText.exe`
 
-Запасной вариант: `scripts\run.bat`
+Fallback: `scripts\run.bat`
 
-## Использование
+## Usage
 
-1. **Начать запись** или **Ctrl+Shift+R**
-2. То же действие — остановить
-3. TXT появится в `Документы\Dialogs` (и в буфере обмена)
+1. **Start recording** or press **Ctrl+Shift+R**
+2. Do the same to stop
+3. A TXT file appears in `Documents\Dialogs` (also copied to the clipboard)
 
-## Структура
+## Layout
 
 ```
 VoiceToText.exe
 requirements.txt
-app/          — код
-scripts/      — run.bat, сборка
-launcher/     — исходники exe
+app/          — app code
+scripts/      — run.bat, build scripts
+launcher/     — exe launcher source
 ```
